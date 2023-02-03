@@ -1,10 +1,15 @@
 import React from 'react';
+import InfluencerDetails from '../../components/InfluencerDetails';
+import InfluencerList from '../../components/InfluencerList';
 
 const Dashboard = () => {
     return (
-        <div>
-            finally
-        </div>
+        <section>
+            <InfluencerList/>
+            
+            {/* Influencer dtails Modal  */}
+            <InfluencerDetails/>
+        </section>
     );
 };
 
