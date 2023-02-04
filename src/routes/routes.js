@@ -1,4 +1,5 @@
 import AddInfluencer from "../components/AddInfluencer";
+import EditInfluencer from "../components/EditInfluencer";
 import DashboardLayout from "../layout/DashboardLayout";
 import Dashboard from "../pages/dashboard/Dashboard";
 
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
             {
                 path: '/addinfoencer',
                 element: <AddInfluencer/>
+            },
+            {
+                path: '/editinfluencer',
+                element: <EditInfluencer/>
             }
         ]
     }

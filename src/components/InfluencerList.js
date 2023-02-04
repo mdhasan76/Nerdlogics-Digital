@@ -1,9 +1,19 @@
 import React from 'react';
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
-import { BiDetail } from 'react-icons/bi'
+import { BiDetail } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const InfluencerList = () => {
 
+    // Delete influencer 
+    const editInfluencer = () =>{
+        console.log("Edit")
+    }
+
+    // Delete influencer 
+    const handleDelete = () =>{
+        console.log("delete")
+    }
 
 
     return (
@@ -27,10 +37,10 @@ const InfluencerList = () => {
                             <div className='flex items-center'>
                                 <label htmlFor="influencer-details" className='inline-block text-2xl bg-slate-200 rounded-full p-3 mr-2'><BiDetail /></label>
 
-                                <label htmlFor="edit-influencer" className='inline-block text-2xl bg-slate-200 rounded-full p-3 mr-2'>
+                                <Link to='/editinfluencer' className='inline-block text-2xl bg-slate-200 rounded-full p-3 mr-2'>
                                 <AiFillEdit />
-                                </label>
-                                <button className='text-2xl bg-red-200 text-red-600 rounded-full p-3'><AiFillDelete /></button>
+                                </Link>
+                                <button onClick={() => handleDelete()} className='text-2xl bg-red-200 text-red-600 rounded-full p-3'><AiFillDelete /></button>
                             </div>
 
                         </td>
